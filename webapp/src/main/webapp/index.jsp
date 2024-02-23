@@ -1,35 +1,64 @@
-!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Form</title>
+    <title>Your Static Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Contact Us</h1>
+    <header>
+        <h1>Your Website</h1>
+    </header>
 
-    <form action="/submit_form" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
 
-        <br>
+    <main>
+        <h2>Welcome to Your Website</h2>
+        <p>This is a simple static website. Customize it as per your needs.</p>
+    </main>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <br>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <br>
-
-        <input type="submit" value="Submit">
-    </form>
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
-
-
-
