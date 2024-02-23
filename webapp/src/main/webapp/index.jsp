@@ -52,8 +52,8 @@
     </nav>
 
     <main>
-        <h2>Welcome to Your Website</h2>
-        <p>This is a simple static website. Customize it as per your needs.</p>
+        <h2>Welcome to Gaurav Chaudhary World</h2>
+        <p>I Hope i Will get job ASAp.</p>
     </main>
 
     <footer>
