@@ -1,65 +1,33 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Delivery App</title>
-    <!-- Add your CSS or other head elements here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
 </head>
 <body>
-    <header>
-        <h1>Delivery App</h1>
-    </header>
 
-    <nav>
-        <!-- Add your navigation links here -->
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Order</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <h1>Contact Us</h1>
 
-    <section id="menu">
-        <h2>Menu</h2>
-        <!-- Display available products or services -->
-        <div class="product">
-            <h3>Product Name</h3>
-            <p>Description of the product goes here.</p>
-            <p>Price: $XX.XX</p>
-            <!-- Add an "Add to Cart" button or link -->
-        </div>
-        <!-- Repeat the above structure for other products -->
+    <form action="/submit_form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-        <!-- You can use a loop to dynamically generate product sections based on data from a database or backend -->
-    </section>
+        <br>
 
-    <section id="order">
-        <h2>Place Your Order</h2>
-        <!-- Simple order form -->
-        <form action="orderConfirmation.jsp" method="post">
-            <label for="productName">Product Name:</label>
-            <input type="text" id="productName" name="productName" required>
-            <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" required>
-            <br>
+        <br>
 
-            <label for="deliveryAddress">Delivery Address:</label>
-            <textarea id="deliveryAddress" name="deliveryAddress" required></textarea>
-            <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-            <!-- Add other relevant form fields (e.g., name, contact information) -->
+        <br>
 
-            <input type="submit" value="Place Order">
-        </form>
-    </section>
+        <input type="submit" value="Submit">
+    </form>
 
-    <footer>
-        <!-- Add your footer content here -->
-        <p>&copy; 2024 Delivery App. All rights reserved.</p>
-    </footer>
 </body>
 </html>
+
